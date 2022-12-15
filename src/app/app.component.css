@@ -1,24 +1,36 @@
-.navbar-inverse{
-    background-color: #025E74;
+*{
+    box-sizing: border-box;
 }
-
-.navbar-inverse a{
+  
+  /* body {
+    margin: 0;
+  } */
+  
+.navbar {
+    overflow: hidden;
+    background-color: #025E74;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
     color: white;
-    font-size: medium;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+   
+.navbar a:hover{
+    background-color: white;
+    color: #025E74 
 }
 
-.logosite{
-    width: 30%;
-    margin-top: -2rem;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.footer p{
+    position: absolute;
+    margin-bottom: 1rem;
     width: 100%;
-    background-color: #025E74;
+    background-color: #025E74 ;
     color: white;
     text-align: center;
  }
-

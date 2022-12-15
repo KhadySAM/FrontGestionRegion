@@ -1,0 +1,79 @@
+.card-title, .card-body{
+    text-align: center;
+    
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.input-group-text, .btn, .col-sm-12{
+    background-color: #025E74;
+    color: white;
+
+}
+
+.col-sm-4, .col-sm-12{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+}
+
+.col-sm-4 button:hover{
+
+    background-color:  white;
+    color: #025E74;
+    border: 2px solid #025E74;
+}
+
+table{
+    margin-top: 2%;
+    background-color: white;
+}
+
+td{
+    font-family: myfon2;
+}
+
+th{
+    font-family: myfon2;
+    color: #ffff !important;
+    font-weight: 600;
+}
+
+thead{
+    background-color: #025E74;
+}
+
+@media screen and (max-width: 450px) {
+
+    .hideColonne{
+      display: none;
+    }
+    th{
+      font-size: medium;
+    }
+    td{
+      font-size: small;
+    }
+  
+}
+
+@media screen and (max-width: 900px) {
+
+    .hideColonneOder{
+      display: none;
+    }
+    th{
+      font-size: medium;
+  
+    }
+    td{
+      font-size: small;
+    }
+}
