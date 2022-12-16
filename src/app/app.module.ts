@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { AccueilComponent } from './Pages/Accueil/accueil/accueil.component';
 import { RegionComponent } from './Pages/Region/region/region.component';
 import { LieuxComponent } from './Pages/Lieuxtouristique/lieux/lieux.component';
+import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccueilComponent,
     RegionComponent,
-    LieuxComponent
+    LieuxComponent,
+    PopupaddregionComponent
   ],
   imports: [
     BrowserModule,

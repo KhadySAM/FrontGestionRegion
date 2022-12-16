@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './Pages/Accueil/accueil/accueil.component';
 import { LieuxComponent } from './Pages/Lieuxtouristique/lieux/lieux.component';
 import { RegionComponent } from './Pages/Region/region/region.component';
+import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.component';
 
 const routes: Routes = [
   {
@@ -18,12 +18,16 @@ const routes: Routes = [
     path:'lieux',
     component: LieuxComponent
   },
+  {
+    path:'pop',
+    component: PopupaddregionComponent
+  },
 
 ];
 
 @NgModule({
   imports: [
- 
+
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule]
