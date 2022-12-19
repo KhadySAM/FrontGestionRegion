@@ -6,6 +6,7 @@ import { AccueilComponent } from './Pages/Accueil/accueil/accueil.component';
 import { RegionComponent } from './Pages/Region/region/region.component';
 import { LieuxComponent } from './Pages/Lieuxtouristique/lieux/lieux.component';
 import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.component';
+import { InscriptionComponent } from './Pages/Inscription/inscription/inscription.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.
     AccueilComponent,
     RegionComponent,
     LieuxComponent,
-    PopupaddregionComponent
+    PopupaddregionComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,
