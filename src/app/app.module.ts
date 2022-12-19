@@ -7,6 +7,7 @@ import { RegionComponent } from './Pages/Region/region/region.component';
 import { LieuxComponent } from './Pages/Lieuxtouristique/lieux/lieux.component';
 import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.component';
 import { InscriptionComponent } from './Pages/Inscription/inscription/inscription.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InscriptionComponent } from './Pages/Inscription/inscription/inscriptio
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [], 
   bootstrap: [AppComponent]
