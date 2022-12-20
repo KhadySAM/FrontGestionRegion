@@ -5,7 +5,7 @@
         </div>
 
         <div class="col-sm-4" >
-            <p>19 régions</p>
+            <h3>{{mesregions.length}} Régions</h3>
         </div>
 
         <div class="col-sm-4" >
@@ -18,7 +18,7 @@
                         </svg>
                     </span>
                 </div>
-                <input class="form-control my-0 py-1" type="text" placeholder="Recherche" aria-label="Search">
+                <input type="text" [(ngModel)]="userFilter.nomregions" class="form-control my-0 py-1"  placeholder="Recherche" aria-label="Search">
             </div>
         </div>
     </div>
@@ -26,32 +26,27 @@
     
     <div class="row" style="margin-top: 6%;">
      
-        <div class="col-sm-3 kadi"  *ngFor="let lesregion of mesregions">
+        <div class="col-sm-3 kadi"  *ngFor="let lesregion of mesregions |filterBy:userFilter | paginate: { itemsPerPage: 4, currentPage: p }">
 
             <div class="card" >
-                <h4 class="card-title">{{lesregion.nomregions}}</h4>
+                <h4 class="card-title">{{lesregion.nomregions}} &nbsp; {{lesregion.coderegion}}</h4>
                 <img class="card-img-top" src="./assets/Images/{{lesregion.images}}" alt="Card image" >
                 <div class="card-body">
                     <p class="card-text">
-                        <strong>Code rg: </strong>{{lesregion.coderegion}}
-                    </p>
+                        <div class="row">
+                            <div class="col-sm-6 right" >
+                                <!-- <h5>Code rg: {{lesregion.coderegion}}</h5> -->
+                                <p>Superficie: {{lesregion.superficieregion}}</p>
+                                <p>Activité: {{lesregion.activiterregion}}</p>
+                            </div>
 
-                    <p class="card-text">
-                        <strong>Superficie:</strong>{{lesregion.superficieregion}}
-                    </p>
-
-                    <p class="card-text">
-                        <strong>Domaine d'activité:</strong>{{lesregion.activiterregion}}
-                    </p>
-
-                    <p class="card-text">
-                      <strong>Langue local:</strong>{{lesregion.languemregion}} <br>
-                    </p>
-
-                    <p class="card-text">
-                        <strong>Population:</strong>{{lesregion.languemregion}} <br>
-                      </p>
-
+                            <div class="col-sm-6 left">
+                                <p>Langue: {{lesregion.languemregion}}</p>
+                                <p>Population: {{lesregion.habitant}}</p>
+                                <!-- <h6>Monney: {{pays.money}}</h6> -->
+                            </div>
+                        </div>
+                    
                     <div class="container">
                         <div class="row" style="color: #025E74;">
                             <div class="col-sm-4" >
@@ -81,7 +76,9 @@
 
 
     <div class="row" style="margin-top: 6%;">
-        <div class="col-sm-12" >uuu
+        <div class="col-sm-12" >
+
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
         </div>
     </div>

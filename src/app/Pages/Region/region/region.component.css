@@ -13,6 +13,17 @@
     height: 100%;
 }
 
+.right{
+    text-align: justify;
+    font-size: 16px;
+
+}
+
+.left{
+    text-align: justify;
+    font-size: 16px;
+}
+
 .input-group-text{
     background-color: #025E74;
     color: white;

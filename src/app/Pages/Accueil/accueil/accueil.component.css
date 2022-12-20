@@ -23,6 +23,16 @@
 
 }
 
+
+.right{
+    text-align: justify;
+
+}
+
+.left{
+    text-align: justify;
+}
+
 button:hover{
 
     background-color:  white;

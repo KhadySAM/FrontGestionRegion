@@ -8,6 +8,9 @@ import { LieuxComponent } from './Pages/Lieuxtouristique/lieux/lieux.component';
 import { PopupaddregionComponent } from './Popups/popupaddregion/popupaddregion.component';
 import { InscriptionComponent } from './Pages/Inscription/inscription/inscription.component';
 import { HttpClientModule } from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
+import { FormsModule } from '@angular/forms';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule,
+    FilterPipeModule,
+    FormsModule,
   ],
   providers: [], 
   bootstrap: [AppComponent]

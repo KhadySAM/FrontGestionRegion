@@ -9,6 +9,8 @@ import { RegionSService } from 'src/app/Services/serviceRegion/region-s.service'
 export class RegionComponent implements OnInit {
 
   mesregions : any;
+  p : number = 1;
+  userFilter : any={nomregions: ''};
 
   constructor(private serviceregion : RegionSService) { }
 

@@ -1,7 +1,9 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/></svg> Région
+    <h5>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+    </svg> Région </h5>
   </button>
   
   <!-- Modal -->
@@ -13,18 +15,25 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="" method="get">
-           <input type="text" placeholder="code région">
+          <form >
+            <div class="rg">
+              <input type="text" placeholder="Nom région">&nbsp;&nbsp;
+              <input type="text" placeholder="Code région">
+            </div>
 
-           <input type="number" placeholder="superficie">
+            <div class="rg">
+              <input type="number" placeholder="Superficie" >&nbsp;&nbsp;
+              <input type="text" placeholder="Domaine d'activité">
+            </div>
 
-           <input type="number" placeholder="habitants">
+            <div class="rg">
+              <input type="text" placeholder="Langue locale">&nbsp;&nbsp;
+              <input type="number" placeholder="Population">
+            </div>
 
-           <input type="text" placeholder="domaine d'activité">
-
-           <input type="text" placeholder="image">
-
-           <input type="text" placeholder="code région"> 
+            <div class="rg">
+              <input type="file" placeholder="Image">
+            </div>
 
           </form>
         </div>

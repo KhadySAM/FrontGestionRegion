@@ -1,19 +1,36 @@
 <div class="container">
     <div class="row" >
 
-     <img src="./assets/Images/mali.png" alt="" class="img1" >
+     <img src="./assets/Images/bko.jpg" alt="" class="img1" >
     </div>
 </div>
 
 <div class="container" style="margin-top: 2%;">
     <div class="row">
-        <div class="col">
+        <div class="col" *ngFor="let pays of monPays">
             <div class="container" style="margin-left: -2%;">
-                <div class="card">
-                    <h4 class="card-title">Mon pays</h4>
-                    <img class="card-img-top" src="./assets/Images/kayes.png" alt="Card image" >
+                <div class="card" >
+                    <h4 class="card-title">{{pays.nompays}}</h4>
+                    <img class="card-img-top" src="./assets/Images/ml.jpg" alt="Card image" >
                     <div class="card-body">
-                        <p class="card-text">Some example text some example text.</p>
+                        <div class="row">
+                            <div class="col-sm-6 right" >
+                                <h6>Capital: {{pays.capital}}</h6>
+                                <h6>Population: {{pays.population}}</h6>
+                                <h6>Independance: {{pays.datIdp}}</h6>
+                            </div>
+
+                            <div class="col-sm-6 left">
+                                <h6>Superficie: {{pays.superf}}</h6>
+                                <h6>Langue Officielle: {{pays.langueoff}}</h6>
+                                <h6>Monney: {{pays.money}}</h6>
+                            </div>
+                        </div>
+
+                        
+
+                       
+
                     </div>
                 </div>
             </div>
