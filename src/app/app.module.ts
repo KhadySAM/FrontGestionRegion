@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import { FormsModule } from '@angular/forms';
 import { FilterPipeModule } from 'ngx-filter-pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     NgxPaginationModule,
     FilterPipeModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [], 
   bootstrap: [AppComponent]

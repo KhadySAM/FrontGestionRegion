@@ -29,22 +29,27 @@
         <div class="col-sm-3 kadi"  *ngFor="let lesregion of mesregions |filterBy:userFilter | paginate: { itemsPerPage: 4, currentPage: p }">
 
             <div class="card" >
-                <h4 class="card-title">{{lesregion.nomregions}} &nbsp; {{lesregion.coderegion}}</h4>
+                <h4 class="card-title">{{lesregion.nomregions}}</h4>
                 <img class="card-img-top" src="./assets/Images/{{lesregion.images}}" alt="Card image" >
                 <div class="card-body">
                     <p class="card-text">
                         <div class="row">
-                            <div class="col-sm-6 right" >
-                                <!-- <h5>Code rg: {{lesregion.coderegion}}</h5> -->
+                            <div class="col-sm-6 right">
+                                <p>Code rg: {{lesregion.coderegion}}</p>
+                                <p>Code rg: {{lesregion.superficieregion}}</p>
+                            </div>
+
+                            <!-- <div class="col-sm-6 right" >
+                                <p>Code: {{lesregion.coderegion}} </p>
                                 <p>Superficie: {{lesregion.superficieregion}}</p>
-                                <p>Activité: {{lesregion.activiterregion}}</p>
+                                <p>Langue: {{lesregion.languemregion}}</p>
                             </div>
 
                             <div class="col-sm-6 left">
-                                <p>Langue: {{lesregion.languemregion}}</p>
-                                <p>Population: {{lesregion.habitant}}</p>
-                                <!-- <h6>Monney: {{pays.money}}</h6> -->
-                            </div>
+                                <p>Habitant: {{lesregion.habitant}}</p>
+                                <p>Activité: {{lesregion.activiterregion}}</p>
+                                <p>Commentaire: {{lesregion.nombrecommentaire}}</p>
+                            </div> -->
                         </div>
                     
                     <div class="container">

@@ -12,7 +12,12 @@ export class RegionComponent implements OnInit {
   p : number = 1;
   userFilter : any={nomregions: ''};
 
+  
+
   constructor(private serviceregion : RegionSService) { }
+
+  
+
 
   ngOnInit(): void {
 
