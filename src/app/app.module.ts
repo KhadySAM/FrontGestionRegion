@@ -12,6 +12,9 @@ import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import { FormsModule } from '@angular/forms';
 import { FilterPipeModule } from 'ngx-filter-pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './Pages/login/login.component';
+
+// import { DeleteregionComponent } from './Popups/deleteregion/deleteregion.component';
 
 
 @NgModule({
@@ -21,7 +24,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegionComponent,
     LieuxComponent,
     PopupaddregionComponent,
-    InscriptionComponent
+    InscriptionComponent,
+    LoginComponent,
+  
+   
   ],
   imports: [
     BrowserModule,

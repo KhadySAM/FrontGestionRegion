@@ -18,11 +18,10 @@ export class PopupaddregionComponent implements OnInit {
     nomregions: '',
     coderegion:'',
     activiterregion: '',
-    superficieregion:'',
+    habitant: 0,
     languemregion:'',
     images:'',
-    description:'',
-    nombrecommentaire: 0
+    
   }
 
   formulaire!:FormGroup
@@ -36,9 +35,9 @@ export class PopupaddregionComponent implements OnInit {
   images: any;
   codeRegions: any;
   langueRegions: any;
-  superficie: any;
+  habitantRg: any;
   activiteRegion: any;
-  descriptionRegions: any;
+ 
   id_Regions: any;
   id_Pays!: any;
   
@@ -49,14 +48,13 @@ export class PopupaddregionComponent implements OnInit {
   ngOnInit(): void {
 
     this.formulaire = this.formB.group({
-      id_regions: ["", Validators.required],
+      // id_regions: ["", Validators.required],
       nomregions: ["", Validators.required],
       file: ["", Validators.required],
-      description: ["", Validators.required],
+      habitant: ["", Validators.required],
       coderegion: ["", Validators.required],
       id_pays:["",Validators.required],
       languemregion:["",Validators.required],
-      superficieregion:["",Validators.required],
       activiterregion:["",Validators.required]
 })
 
@@ -77,13 +75,13 @@ this.nomRegions = this.formulaire!.get("nomregions")!.value;
 this.images = this.formulaire!.get("file")!.value;
 this.codeRegions = this.formulaire!.get("coderegion")!.value;
 this.langueRegions = this.formulaire!.get("languemregion")!.value;
-this.superficie = this.formulaire!.get("superficieregion")!.value;
+this.habitantRg = this.formulaire!.get("habitant")!.value;
 this.activiteRegion = this.formulaire!.get("activiterregion")!.value;
-this.descriptionRegions = this.formulaire!.get("description")!.value;
 
-console.log("ID: "+this.id_Regions+" Nom: " +this.nomRegions+"Images: " +this.images+"Code: " +this.codeRegions+"Superf: " +this.superficie+"Activite: " +this.activiteRegion+"Descr: " +this.descriptionRegions);
 
- this.regionService.AjouterRegion(this.id_Pays,this.nomRegions,this.codeRegions,this.activiteRegion,this.superficie,this.langueRegions,this.descriptionRegions,this.file)
+console.log("ID: "+this.id_Regions+" Nom: " +this.nomRegions+"Images: " +this.images+"Code: " +this.codeRegions+"Activite: " +this.activiteRegion+"Descr: " +this.habitantRg);
+
+ this.regionService.AjouterRegion(this.id_Pays,this.nomRegions,this.codeRegions,this.activiteRegion,this.langueRegions,this.habitantRg,this.file)
   .subscribe(data=>{
     const RegionEnregistrer = data
     console.log("================= "+RegionEnregistrer)

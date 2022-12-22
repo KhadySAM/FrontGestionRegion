@@ -1,0 +1,23 @@
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+
+.d-grid{
+    text-align: center;
+}
+
+.btn{
+    background-color: #025E74;
+    color: white;
+    width: 100%;
+}
+
+
+.btn:hover{
+
+    background-color:  white;
+    color: #025E74;
+    border: 2px solid #025E74;
+}

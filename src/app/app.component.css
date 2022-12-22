@@ -27,7 +27,7 @@
 }
 
 .footer p{
-    position: absolute;
+    position: fixed;
     margin-bottom: 1rem;
     width: 100%;
     background-color: #025E74 ;

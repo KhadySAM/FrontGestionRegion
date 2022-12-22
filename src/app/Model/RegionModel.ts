@@ -3,9 +3,9 @@ export class Regions{
     nomregions?:string;
     coderegion?:string;
     activiterregion?:string;
-    superficieregion?:string;
+    habitant?: any;
     languemregion?:string;
     images?:string;
-    description?:string;
-    nombrecommentaire?: number
+   
+   
 }
