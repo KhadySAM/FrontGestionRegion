@@ -12,7 +12,6 @@ import { RegionSService } from 'src/app/Services/serviceRegion/region-s.service'
 })
 export class PopupaddregionComponent implements OnInit {
 
-
   ObjetRegions : Regions = {
     id_regions: 0,
     nomregions: '',
@@ -21,14 +20,11 @@ export class PopupaddregionComponent implements OnInit {
     habitant: 0,
     languemregion:'',
     images:'',
-    
   }
 
   formulaire!:FormGroup
   fichier: any;
-  
   contenu?:String;
-
   file: any;
 
   nomRegions: any;
@@ -42,7 +38,6 @@ export class PopupaddregionComponent implements OnInit {
   id_Pays!: any;
   
   
-
   constructor(private regionService:RegionSService,private formB: FormBuilder) { }
 
   ngOnInit(): void {
